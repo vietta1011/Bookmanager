@@ -1,0 +1,32 @@
+/* Định dạng chung cho navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Chiều cao của navbar */
+  background-color: #333; /* Màu nền */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Khoảng cách đều giữa các link */
+  z-index: 1000; /* Đảm bảo navbar nằm trên nội dung khác */
+}
+
+/* Định dạng link trong navbar */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Đẩy nội dung xuống dưới navbar */
+.content {
+  margin-top: 60px; /* Khoảng cách bằng với chiều cao navbar */
+}
